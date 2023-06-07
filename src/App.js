@@ -1,8 +1,18 @@
 import React from "react";
-import{ BrowerRouter, Routes, Route } from "react-router-dom";
+import{ BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./pages/About";
+import Home from "./pages/Home";
 
 const App = () => {
-  return <h1>kasa</h1>;
+  return (
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/About" element={<About/>}/>
+          <Route path="*" element={<Error/>}/>
+        </Routes>
+      </BrowserRouter>
+    );
   };
 
 export default App;
