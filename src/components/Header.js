@@ -6,14 +6,14 @@ const Header = () => {
     return (
         <header>
             <div id='logo'>
-                <img src="./kasa_red.png" alt="logo" />
+                <img src="./logo.png" alt="logo" />
             </div>
             <div id='nav'>
                 <ul>
-                    <NavLink to="/" className='menu'>
+                    <NavLink to="/" className='navigation'>
                         <li >Accueil</li>
                     </NavLink>
-                    <NavLink to="/About" className='menu'>
+                    <NavLink to="/About" className='navigation'>
                         <li >A Propos</li>
                     </NavLink>
                 </ul>

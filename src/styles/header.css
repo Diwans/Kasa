@@ -3,13 +3,23 @@ header {
   justify-content: space-between;
 }
 
-.menu {
+.navigation {
   text-decoration: none;
-  color: red;
-  margin-left: 20px;
+  color: #FF6060;
+  margin-left: 60px;
   list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+.navigation:hover {
+  border-bottom: 2px solid #FF6060;
 }
 
 #nav ul {
   display: flex;
+}
+
+#logo img {
+  width: 210px;
+  height: 70px;
 }/*# sourceMappingURL=header.css.map */
