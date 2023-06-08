@@ -1,13 +1,15 @@
 import React from 'react';
+import Header from '../components/Header';
+import '../styles/page.scss';
+import BannerAbout from '../components/BannerAbout';
+import Menu from '../components/Menu';
 
 const About = () => {
     return (
-        <div>
-            <h1>About</h1>
-            <br />
-            <p>
-              fazbfazfazmjnfa fafazoifhaoinfaiomnfazjkm  a faznrfnba rjn aznr nazr n abfb bfab ajzb jkab jka ajkbjba a  
-            </p>
+        <div className='page'>
+            <Header />
+            <BannerAbout />
+            <Menu />
         </div>
     );
 };

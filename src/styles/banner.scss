@@ -6,16 +6,12 @@
     background-position: right 50% bottom 50%;
     border-radius: 25px;
     position: relative;
-    background-blend-mode: darken;
 }
 
 .bannerTxt{
     font-family: 'Montserrat', sans-serif;
     font-size: 48px;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     top: 40%;
     left: calc(50% - 705px/2 + 5.5px);
