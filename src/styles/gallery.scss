@@ -4,4 +4,12 @@
     height: 830px;
     background: #F7F7F7;
     border-radius: 25px;
+    padding-top: 25px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
