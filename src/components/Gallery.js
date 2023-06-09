@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/gallery.scss'
+import '../styles/gallery.scss';
 import Cards from './Cards';
 
 const Gallery = () => {
