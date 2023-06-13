@@ -4,14 +4,11 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-const Menu = () => {
+const Menu = ({categorie, txt}) => {
     return (
-        <section id='menu'>
-            <div className='option'>Fiabilité<FontAwesomeIcon icon={faChevronUp} /></div>
-            <div className='option'>Respect<FontAwesomeIcon icon={faChevronUp} /></div>
-            <div className='option'>Service<FontAwesomeIcon icon={faChevronUp} /></div>
-            <div className='option'>Sécurité<FontAwesomeIcon icon={faChevronUp} /></div>
-        </section>
+        <div className='menu'>
+            <div className='option'>{categorie}<FontAwesomeIcon icon={faChevronUp} /></div>
+        </div>
     );
 };
 

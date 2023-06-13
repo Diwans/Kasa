@@ -13,7 +13,10 @@ const About = () => {
             <div className='page'>
                 <Header />
                 <Banner img={imgBannerAbout} /> 
-                <Menu />
+                <Menu categorie={"Fiabilité"}/>
+                <Menu categorie={"Respect"}/>
+                <Menu categorie={"Service"}/>
+                <Menu categorie={"Sécurité"}/>
             </div>
             <Footer />
         </div>
