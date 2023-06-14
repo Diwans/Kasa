@@ -1,9 +1,11 @@
 import React from 'react';
+import data from '../assets/data/data.json';
 
 const Logement = () => {
+    
     return (
         <div>
-            <h1>Logement</h1>
+            <p></p>
         </div>
     );
 };

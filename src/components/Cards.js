@@ -1,9 +1,13 @@
 import React from 'react';
 import '../styles/card.scss'
+import { NavLink } from 'react-router-dom';
 
-const Cards = () => {
+const Cards = ({cover, title, id}) => {
     return (
-        <div className='card'><p className='titleLocation'>Titre de la location</p></div>
+        <NavLink to={`/logement/${id}`} className='card' >
+            <p className='titleLocation'>{title}</p>
+            <img src={cover}/>
+        </NavLink>
     );
 };
 

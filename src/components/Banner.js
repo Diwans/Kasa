@@ -4,8 +4,8 @@ import '../styles/banner.scss'
 const Banner = ({img, txt}) => {
     return (
         <div id='banner'>
-            <img src={img}  alt="" />
             <div className='overlay'></div>
+            <img src={img}  alt="" />
             <div className='bannerTxt'>{txt}</div>
         </div>
     );

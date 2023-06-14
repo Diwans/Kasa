@@ -9,7 +9,7 @@ const Menu = ({categorie, description}) => {
     const [btnState, setBtnSate] = useState(true);
     
     function handleclick(){
-        setBtnSate(btnState => !btnState)
+        setBtnSate(!btnState)
         };
     
         let toggleClassCheck = btnState ? 'hide' : null;
@@ -26,7 +26,6 @@ const Menu = ({categorie, description}) => {
     function rotateArrow(){
         setRotate(!rotate)
     };
-
         
      return (
         <div className='collapse'>
