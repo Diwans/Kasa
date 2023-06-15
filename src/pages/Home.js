@@ -3,9 +3,9 @@ import Header from '../components/Header';
 import Banner from'../components/Banner';
 import Gallery from'../components/Gallery';
 import Footer from '../components/Footer';
+import imgBannerHome from '../assets/img/imgBanner.jpg'
 import '../styles/page.scss';
 import '../styles/body.scss';
-import imgBannerHome from '../assets/img/imgBanner.jpg'
 
 const Home = () => {
     return (
