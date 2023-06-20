@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import { NavLink } from 'react-router-dom';
-import '../styles/body.scss'
-import '../styles/page.scss'
-import '../styles/error.scss'
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import '../../styles/page.scss';
+import '../../styles/body.scss';
+import './error.scss'
 
 const Error = () => {
     return (

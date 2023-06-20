@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from '../components/Header';
-import '../styles/page.scss';
-import Banner from '../components/Banner';
-import Collapse from '../components/Collapse';
-import '../styles/body.scss'
-import Footer from '../components/Footer';
-import imgBannerAbout from '../assets/img/img-banner-about.jpg'
+import Header from '../../components/Header/Header';
+import Banner from '../../components/Banner/Banner';
+import Collapse from '../../components/Collapse/Collapse';
+import Footer from '../../components/Footer/Footer';
+import imgBannerAbout from '../../assets/img/img-banner-about.jpg';
+import '../../styles/page.scss';
+import '../../styles/body.scss'
 
 const About = () => {
     return (

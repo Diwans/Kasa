@@ -1,26 +1,19 @@
 import React from 'react';
-import data from '../assets/data/data.json';
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Carousel from '../components/Carousel';
-import Collapse from '../components/Collapse';
-import '../styles/page.scss';
-import '../styles/body.scss';
-import '../styles/logement.scss';
+import data from '../../assets/data/data.json';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import Carousel from '../../components/Carousel/Carousel';
+import Collapse from '../../components/Collapse/Collapse';
+import '../../styles/page.scss';
+import '../../styles/body.scss';
+import './logement.scss'
 
 const Logement = () => {
 
 	const idLogement = useParams('id').id;
 	const dataLogement = data.filter(data => data.id === idLogement);
 	
-	const [carousel, setCarousel] = useState([]);
-	
-	useEffect(() => {
-		const dataLogement = data.filter(data => data.id === idLogement);
-		setCarousel(dataLogement[0].pictures.slice(1,2,3,4));
-	}, []);
 
 	const title = dataLogement[0].title;
 	const rating = dataLogement[0].rating;
@@ -40,7 +33,7 @@ const Logement = () => {
 					<div id='info'>
 						<h2>{title}</h2>
 						<p>{location}</p>
-						<div id='tags'>{tags}</div>
+						<div id='tags'>{tags.map(tags=>tags)}</div>
 					</div>
 				
 					<div id='hostAndRating'>

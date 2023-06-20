@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from '../components/Header';
-import Banner from'../components/Banner';
-import Gallery from'../components/Gallery';
-import Footer from '../components/Footer';
-import imgBannerHome from '../assets/img/imgBanner.jpg'
-import '../styles/page.scss';
-import '../styles/body.scss';
+import Header from '../../components/Header/Header';
+import Banner from'../../components/Banner/Banner';
+import Gallery from'../../components/Gallery/Gallery';
+import Footer from '../../components/Footer/Footer';
+import imgBannerHome from '../../assets/img/imgBanner.jpg';
+import '../../styles/page.scss';
+import '../../styles/body.scss'
 
 const Home = () => {
     return (

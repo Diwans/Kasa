@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/collapse.scss'
+import './collapse.scss'
 import { useState } from 'react';
-import { ReactComponent as Arrow } from '../assets/img/arrow.svg';
+import { ReactComponent as Arrow } from '../../assets/img/arrow.svg';
 
 
 const Menu = ({categorie, description}) => {
@@ -13,10 +13,6 @@ const Menu = ({categorie, description}) => {
         };
     
         let toggleClassCheck = btnState ? 'hide' : null;
-
-
-
-
 
     const [ rotate, setRotate ] = useState(true);
     const styleArrow = {

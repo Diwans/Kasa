@@ -1,9 +1,9 @@
 import React from "react";
 import{ BrowserRouter, Routes, Route } from "react-router-dom";
-import About from "./pages/About";
-import Home from "./pages/Home";
-import Error from "./pages/Error";
-import Logement from './pages/Logement';
+import About from "./pages/About/About";
+import Home from "./pages/Home/Home";
+import NotFound from "./pages/NotFound/NotFound";
+import Logement from './pages/Logement/Logement';
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/logement/:id" element={<Logement/>} />
-          <Route path="*" element={<Error/>} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
       </BrowserRouter>
     );

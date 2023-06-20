@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/gallery.scss';
-import Cards from './Cards';
-import data from '../assets/data/data.json'
+import Cards from '../Cards/Cards';
+import data from '../../assets/data/data.json';
+import './gallery.scss'
 
 const Gallery = () => {
     return (
