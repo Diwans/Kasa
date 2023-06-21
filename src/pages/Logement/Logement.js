@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
+import { ReactComponent as Star } from '../../assets/img/star.svg';
 import data from '../../assets/data/data.json';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
@@ -31,19 +32,23 @@ const Logement = () => {
 				<Carousel/>
 				<div className='infoContainer'>
 					<div id='info'>
-						<h2>{title}</h2>
-						<p>{location}</p>
-						<div id='tags'>{tags.map(tags=>tags)}</div>
+						<h2 className='title'>{title}</h2>
+						<p className='city'>{location}</p>
+						<div id='tags'>{tags.map(tags=>{
+							return(
+								<div className='tags'>{tags}</div>
+							)
+						})}</div>
 					</div>
 				
 					<div id='hostAndRating'>
 						<div id='host'>
-							<p>{hostName}</p>
-							<img src={hostPicture} alt="" />
+							<p className='hostName'>{hostName}</p>
+							<img className='hostPdp' src={hostPicture} alt="" />
 						</div>
 
 						<div id='rating'>
-							{rating}
+							<Star className='star color' /> <Star className='star color'/> <Star className='star color'/> <Star className='star color'/> <Star className='star color' />
 						</div>
 					</div>
 				</div>

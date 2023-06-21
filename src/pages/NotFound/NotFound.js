@@ -4,7 +4,7 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import '../../styles/page.scss';
 import '../../styles/body.scss';
-import './error.scss'
+import './NotFound.scss'
 
 const Error = () => {
     return (
