@@ -6,6 +6,7 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import Carousel from '../../components/Carousel/Carousel';
 import Collapse from '../../components/Collapse/Collapse';
+import Rating from '../../components/Rating/Rating';
 import '../../styles/page.scss';
 import '../../styles/body.scss';
 import './logement.scss'
@@ -23,13 +24,14 @@ const Logement = () => {
 	const location = dataLogement[0].location;
 	const tags = dataLogement[0].tags;
 	const hostName = dataLogement[0].host.name;
-	const hostPicture = dataLogement[0].host.picture
+	const hostPicture = dataLogement[0].host.picture;
+	const picture =dataLogement[0].pictures
 
     return (
 		<div>
         	<div className='page'>
 				<Header/>
-				<Carousel/>
+				<Carousel photo={picture}/>
 				<div className='infoContainer'>
 					<div id='info'>
 						<h2 className='title'>{title}</h2>
@@ -48,14 +50,21 @@ const Logement = () => {
 						</div>
 
 						<div id='rating'>
-							<Star className='star color' /> <Star className='star color'/> <Star className='star color'/> <Star className='star color'/> <Star className='star color' />
+							< Rating note={rating}/>
 						</div>
 					</div>
 				</div>
 
 				<div id='collapseLogement'>
 					<Collapse categorie="Description" description={description}/>
-					<Collapse categorie="Équpiements" description={equipments}/>
+					<span id='space'></span>
+					<Collapse categorie="Équipements" description={equipments.map(equipments=>{
+						return(
+							<ul className='equipmentList'>
+								<li>{equipments}</li>
+							</ul>
+						)
+					})}/>
 				</div>
 
         	</div>

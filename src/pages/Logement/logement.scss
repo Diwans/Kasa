@@ -9,18 +9,15 @@
 
 #collapseLogement{
     display: flex;
-    justify-content: space-evenly;
 }
 
 .title{
-    font-family: 'Montserrat';
     font-size: 36px;
     color: #FF6060;
     margin-bottom: 0;
 }
 
 .city{
-    font-family: 'Montserrat';
     font-size: 18px;
     color: #FF6060;
     margin-top: 5;
@@ -35,7 +32,6 @@
     background: #FF6060;
     color: white;
     font-size: 14px;
-    font-family: 'Montserrat';
     border-radius: 10px;
     text-align: center;
     width:fit-content;
@@ -54,7 +50,6 @@
 }
 
 .hostName{
-    font-family: 'Montserrat';
     font-size: 18px;
     display: flex;
     text-align: right;
@@ -75,4 +70,14 @@
 
 .color{
     fill: #E3E3E3;
+}
+
+.equipmentList{
+    list-style-type: none;
+    padding-left: 10px;
+    margin: 3px;
+}
+
+#space{
+    width: 15%;
 }

@@ -25,12 +25,13 @@ const Menu = ({categorie, description}) => {
         
      return (
         <div className='collapse'>
-            <div className='option'>{categorie} 
+            <div className='option'>
+                <div className='optionTitle'>{categorie}</div>
                 <div onClick={handleclick}>
                     <div onClick={rotateArrow}><Arrow className="arrow" style={styleArrow} /></div>
                 </div>
             </div> 
-            <div className={`description ${toggleClassCheck}`}>{description}</div>
+            <div className={`description ${toggleClassCheck}`}><p>{description}</p></div>
         </div>
     );
 };

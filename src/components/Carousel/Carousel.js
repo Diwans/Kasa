@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Carousel = () => {
+const Carousel = ({photo}) => {
     return (
-        <div>
-            
+        <div id='carousel'>
+            <img src={photo} alt="" />
         </div>
     );
 };
