@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
-import { ReactComponent as Star } from '../../assets/img/star.svg';
 import data from '../../assets/data/data.json';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
@@ -25,13 +24,13 @@ const Logement = () => {
 	const tags = dataLogement[0].tags;
 	const hostName = dataLogement[0].host.name;
 	const hostPicture = dataLogement[0].host.picture;
-	const picture =dataLogement[0].pictures
+	const pictures = dataLogement[0].pictures;
 
     return (
 		<div>
         	<div className='page'>
 				<Header/>
-				<Carousel photo={picture}/>
+				<Carousel pictures={pictures}/>
 				<div className='infoContainer'>
 					<div id='info'>
 						<h2 className='title'>{title}</h2>
