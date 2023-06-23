@@ -22,3 +22,29 @@ header {
     width: 210px;
     height: 70px;
 }
+
+@media screen and (max-width : 950px){
+    #logo img{
+        width: 157px;
+        height: 52px;
+    }
+
+    .navigation{
+        margin-left: 20px;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    }
+
+    @media screen and (max-width : 600px){
+        #logo img{
+            width: 105px;
+            height: 35px;
+        }
+    
+        .navigation{
+            margin-left: 8px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        }

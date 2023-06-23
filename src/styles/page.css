@@ -6,4 +6,12 @@
 
 * {
   font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 950px) {
+  .page {
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 37px;
+  }
 }/*# sourceMappingURL=page.css.map */

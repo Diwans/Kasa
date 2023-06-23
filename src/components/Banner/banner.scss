@@ -23,15 +23,45 @@
         opacity: 0.3;
     }
 
-    & .bannerTxt{
-        font-size: 48px;
-        color: white;
-        position: absolute;
-        top: 40%;
-        left: calc(50% - 705px/2 + 5.5px);
-    }
+    
 
+}
+.bannerTxt{
+    font-size: 48px;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: calc(50% - 705px/2 + 5.5px);
+}
+
+@media screen and (max-width : 950px){
+.bannerTxt{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    right: 20%;
+    text-align: left;
+        
+}
+
+#banner{
+    height: 200px;
+}
 }
 
 
+@media screen and (max-width : 600px){
+    .bannerTxt{
+        font-size: 25px;
+        color: white;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        right: 20%;
+        text-align: left;
+            
+    }
+    }
 

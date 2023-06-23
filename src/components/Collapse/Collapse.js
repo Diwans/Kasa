@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { ReactComponent as Arrow } from '../../assets/img/arrow.svg';
 
 
-const Menu = ({categorie, description}) => {
+const Collapse = ({categorie, description}) => {
 
     const [btnState, setBtnSate] = useState(true);
     
@@ -31,9 +31,9 @@ const Menu = ({categorie, description}) => {
                     <div onClick={rotateArrow}><Arrow className="arrow" style={styleArrow} /></div>
                 </div>
             </div> 
-            <div className={`description ${toggleClassCheck}`}><p>{description}</p></div>
+            <div className={`description ${toggleClassCheck}`}><div className='divDes'>{description}</div></div>
         </div>
     );
 };
 
-export default Menu;
+export default Collapse;

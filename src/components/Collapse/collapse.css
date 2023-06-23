@@ -38,7 +38,7 @@
     opacity: 1;
   }
 }
-.description p {
+.description .divDes {
   margin: 0px;
   padding: 35px 15px 20px 15px;
 }
