@@ -14,4 +14,11 @@
     margin-right: 75px;
     margin-top: 37px;
   }
+}
+@media screen and (max-width: 600px) {
+  .page {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 37px;
+  }
 }/*# sourceMappingURL=page.css.map */

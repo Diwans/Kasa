@@ -1,6 +1,7 @@
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navigation {
@@ -37,14 +38,47 @@ header {
     }
 
     @media screen and (max-width : 600px){
+
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
         #logo img{
             width: 105px;
             height: 35px;
         }
     
         .navigation{
-            margin-left: 8px;
+            margin-left: 0px;
             font-size: 12px;
             text-transform: uppercase;
         }
+
+        .margin{
+            margin-right: 20px;
+            margin-left: -30px;
         }
+        }
+
+@media screen and (max-width : 380px){
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .navigation{
+        margin-left: 0px;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+    #logo img{
+        width: 77px;
+        height: 27px;
+    }
+
+    .margin{
+        margin-right: 10px;
+        margin-left: -30px;
+    }
+}

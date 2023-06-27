@@ -11,7 +11,7 @@ const Header = () => {
             </div>
             <div id='nav'>
                 <ul>
-                <NavLink key={'accueil'} to="/" className='navigation'>
+                <NavLink key={'accueil'} to="/" className='navigation margin'>
                         <li >Accueil</li>
                     </NavLink>
                     <NavLink key={'about'} to="/about" className='navigation'>
