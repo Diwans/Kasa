@@ -54,4 +54,23 @@
 
 .optionTitle {
   padding-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .option {
+    font-size: 20px;
+    height: 42px;
+  }
+  .description {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .option {
+    font-size: 18px;
+    height: 32px;
+  }
+  .description {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=collapse.css.map */

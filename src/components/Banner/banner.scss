@@ -68,4 +68,19 @@
     }
     }
 
-   
+    @media screen and (max-width : 380px){
+        #banner{
+            height: 100px;
+        }
+
+        .bannerTxt{
+            font-size: 20px;
+            top: 30%;
+        }
+    }
+
+    @media screen and (max-width : 340px){
+        .bannerTxt{
+            top: 20%;
+        }
+    }

@@ -19,4 +19,34 @@
 #credits{
     color: white;
     margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media screen and (max-width : 950px){
+    #footer img{
+        width: 157px;
+        height: 52px;
+    }
+}
+
+@media screen and (max-width : 600px){
+    #footer img {
+        width: 158px;
+        height: 52px;
+    } 
+    
+    #credits{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width : 380px){
+    #footer img {
+        width: 105px;
+        height: 35px;
+    }  
+    #credits{
+        font-size: 18px;
+    } 
 }
