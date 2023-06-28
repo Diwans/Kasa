@@ -26,8 +26,8 @@ header {
 
 @media screen and (max-width: 950px) {
   #logo img {
-    width: 157px;
-    height: 52px;
+    width: 150px;
+    height: 50px;
   }
   .navigation {
     margin-left: 20px;
@@ -38,7 +38,7 @@ header {
 @media screen and (max-width: 600px) {
   header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
   }
   .navigation {
@@ -51,10 +51,10 @@ header {
     margin-left: -30px;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
   header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
   }
   .navigation {

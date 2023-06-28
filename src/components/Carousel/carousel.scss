@@ -29,3 +29,15 @@
     transform: rotate(90deg);
     margin-right: 10px;
 }
+
+@media screen and (max-width : 950px){
+    .carouselImg{
+        height: 280px;
+    }
+}
+
+@media screen and (max-width : 400px){
+    .carouselImg{
+        margin-top: 20px;
+    }
+}
