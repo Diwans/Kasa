@@ -38,6 +38,7 @@
   text-align: center;
   width: -moz-fit-content;
   width: fit-content;
+  max-height: 30px;
   padding: 5px 30px 5px 30px;
 }
 
@@ -113,7 +114,7 @@
 @media screen and (max-width: 600px) {
   .tags {
     font-size: 10px;
-    padding: 5px 25px 5px 25px;
+    padding: 5px 18px 5px 18px;
     margin-right: 8px;
   }
   .title {
@@ -128,7 +129,8 @@
 }
 @media screen and (max-width: 400px) {
   .tags {
-    padding: 5px 20px 5px 20px;
+    font-size: 8px;
+    padding: 5px 15px 5px 15px;
     margin-right: 5px;
   }
   .star {
@@ -153,12 +155,12 @@
   }
   #tags {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
   }
 }
 @media screen and (max-width: 300px) {
   .tags {
-    padding: 5px 15px 5px 15px;
+    padding: 5px 10px 5px 10px;
     margin-right: 5px;
   }
 }/*# sourceMappingURL=logement.css.map */
