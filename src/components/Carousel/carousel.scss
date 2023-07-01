@@ -30,6 +30,15 @@
     margin-right: 10px;
 }
 
+.counter{
+    position: absolute;
+    left: 49%;
+    bottom: 15px;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+}
+
 @media screen and (max-width : 950px){
     .carouselImg{
         height: 280px;

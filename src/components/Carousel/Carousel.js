@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { ReactComponent as ArrowLeft } from '../../assets/img/arrow.svg';
-import { ReactComponent as ArrowRight } from '../../assets/img/arrow.svg';
+import ArrowLeft  from '../../assets/img/arrow.svg';
+import ArrowRight from '../../assets/img/arrow.svg';
 import './carousel.scss'
 
 const Carousel = ({pictures}) => {
@@ -19,8 +19,13 @@ const Carousel = ({pictures}) => {
     return (
         <div className='carousel'>
             <img src={pictures[currentPicture]} className="carouselImg" alt="" />
-            <ArrowLeft onClick={prev} className="left-arrow"/>
-            <ArrowRight onClick={next} className="right-arrow"/>
+            
+            {PicturesLength > 1 && (<img  src={ArrowLeft} onClick={prev} className="left-arrow"/>)}
+
+            {PicturesLength > 1 && ( <img  src={ArrowRight} onClick={next} className="right-arrow"/>)}
+            
+            {PicturesLength > 1 && ( <span className='counter'>{currentPicture + 1 } / {PicturesLength}</span>)}
+            
         </div>
     )
 };
